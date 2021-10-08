@@ -11,6 +11,20 @@
 ![Screenshot (38)](https://user-images.githubusercontent.com/42673172/136384121-1e08b44f-8381-4542-8b52-e20017e4de10.png)
 
 # Steps to run:
+1) Set up MySQL database with the same local instance on localhost:3306 and same username and password as 'root'(please refer application.properties file), create a database named 'project', in that database create a table named 'userlist'.
+Query to create a table -> CREATE TABLE userlist (
+    user_id Integer(100),
+    fname varchar(25),
+    lname varchar(25),
+    dob date,
+    city varchar(25),
+    mobile varchar(11)
+);
+Make user_id as primary key and add auto-increment to it.
+If you want to make any changes to table name or database name or localhost configuration, you may need to make the same changes in application.properties file.
+
+2) Then, you need to import the project in your spring tool suite. After importing you have to run the application from there.
+3) Lastly, you have to follow the postman mechanism screenshots, in which api calls are present to access the features of this service.
 
 
 
